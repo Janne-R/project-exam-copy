@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Welcome to my food blog. Tasteful dinner recipes for the busy family. Get your new inspiration here." />
+  <title>Family Kitchen | home page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b83f6c7ccb.js" crossorigin="anonymous"></script>
+  <!-- Hotjar Tracking Code for https://compassionate-dubinsky-a5f5e6.netlify.app/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 2601219, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<body>
+  <header class="header-sticky">
+    <div class="header-content">
+      <nav class="header-nav">
+        <a href="index.html"><img class="logo" src="images/logo.svg"
+            alt="Family Kitchen tex with a image of a knife, fork and spoon above"></a>
+        <button class="hamburger" tabindex="0" id="hamburger" aria-label="hamburger menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-ul">
+          <li class="menu-link"><a href="about.html">About</a></li>
+          <li class="menu-link"><a href="blog-post.html">Blog posts</a></li>
+          <li class="menu-link"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>What to eat for dinner?</h1>
+        <p>Tasteful dinner recipes for the busy family.</p>
+        <p>All recipes takes under 1 hour to make.</p>
+      </div>
+    </div>
+    <section class="section-latest-post">
+      <h2>Latest posts</h2>
+    </section>
+    <section class="carousel">
+      <div class="loader-container">
+        <div class="loader"></div>
+      </div>
+      <button class="carousel-button-left" aria-label="carousel button left way">
+        <i class="fas fa-arrow-circle-left"></i>
+      </button>
+      <div class="latest-posts blog-posts">
+      </div>
+      <button class="carousel-button-right" aria-label="carousel button right way">
+        <i class="fas fa-arrow-circle-right"></i>
+      </button>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-section">
+      <div class="footer-content">
+        <div class="footer-navigate">
+          <h3>Navigate</h3>
+          <a href="index.html">Home page</a>
+          <a href="about.html">About us</a>
+          <a href="blog-post.html">Blog posts</a>
+          <a href="contact.html">Contact us</a>
+        </div>
+        <div class="footer-some">
+          <h3>Social media</h3>
+          <a href="https://www.facebook.com/Family-Kitchen-106838485084598/" aria-label="Link to Facebook page"><i
+              class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/family_kitchen010101/" aria-label="Link to Instagram page"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/FamilyK89721503" aria-label="Link to Twitter page"><i
+              class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>Copyright ©2021 Family Kitchen </p>
+      </div>
+    </section>
+  </footer>
+  <script src="js/lib/hamburgerMenu.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html> 

@@ -1,0 +1,136 @@
+@media (min-width: 480px) {
+  /*index-site*/
+  .hero {
+    height: 80vh;
+  }
+
+  .hero-text {
+    padding-top: 55px;
+  }
+
+  .header-button {
+    max-width: 350px;
+  }
+
+  .carousel {
+    min-height: 462px;
+  }
+
+  /*about-page*/
+  .content-intro {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .content-intro p {
+    margin-left: 10px;
+  }
+
+  .latest-posts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 800px) {
+  /*index-site*/
+  .hero {
+    background-image: url(../images/test-hero.jpg);
+  }
+
+  .header-nav,
+  .header-content-text,
+  main,
+  .footer-section,
+  .hero-text,
+  .loader-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .header-nav {
+    flex-wrap: nowrap;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-ul {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  .menu-link {
+    padding: 0;
+  }
+
+  .carousel {
+    min-height: 350px;
+  }
+
+  /*about-page*/
+  .content-block {
+    display: flex;
+  }
+
+  .content-block img {
+    display: block;
+    max-width: 40%;
+    height: fit-content;
+  }
+
+  .content-block-text {
+    margin-right: 50px;
+  }
+
+  .content-block-second {
+    flex-direction: row-reverse;
+  }
+
+  .img-chefs-hat {
+    display: block;
+  }
+
+  .recipe-block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  /*blog-post page*/
+  .blog-post-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .blog-post-section .button-filter {
+    margin-top: 50px;
+    width: 350px;
+  }
+
+  .blog-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 14px;
+  }
+
+  .blog-post-image {
+    height: 150px;
+  }
+
+  /*modal*/
+  .modalImg {
+    height: 65vh;
+  }
+
+  .modal-content {
+    max-width: 90%;
+  }
+
+  /*footer*/
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}

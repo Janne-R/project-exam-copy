@@ -1,0 +1,32 @@
+.img-text,
+.content-intro p {
+  font-style: italic;
+  margin-top: 0px;
+}
+
+.content-block img {
+  display: none;
+}
+
+.img-chefs-hat {
+  background-image: url(../images/chefs-hat.png);
+  display: none;
+}
+
+.content-block-recipe h3,
+h4 {
+  margin: 40px 0;
+}
+
+.recipe-block {
+  margin-bottom: 40px;
+}
+
+.recipe-block li {
+  margin-bottom: 10px;
+}
+
+.img-salmon-bowl {
+  background-image: url(../images/salmon-bowl-2.jpg);
+  height: 320px;
+}
