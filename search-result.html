@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to my food blog. Get new inspiration from my blog post recipes here." />
-  <title>Family Kitchen | blog posts</title>
+  <meta name="description"
+    content="Welcome to my food blog. Tasteful dinner recipes for the busy family. Get your new inspiration here." />
+  <title>Family Kitchen | home page</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <link href="css/blog-post.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
   <link href="css/media.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b83f6c7ccb.js" crossorigin="anonymous"></script>
   <!-- Hotjar Tracking Code for https://compassionate-dubinsky-a5f5e6.netlify.app/ -->
@@ -39,51 +40,22 @@
         </button>
         <ul class="nav-ul">
           <li class="menu-link"><a href="about.html">About</a></li>
-          <li class="menu-link"><a href="blog-post.html" class="current">Blog posts</a></li>
+          <li class="menu-link"><a href="blog-post.html">Blog posts</a></li>
           <li class="menu-link"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <section class="blog-post-section">
-      <div>
-        <h1>Blog posts</h1>
-        <p>Hope you find some inspiration for your next family dinner.</p>
-      </div>
-      <div>
-        <button class="button-filter">Add filter<i id="icon-filter" class="fas fa-plus"></i></button>
-        <div class="filters">
-          <ul class="filters-list">
-            <h2>Cooking time</h2>
-            <div>
-              <input type="radio" name="min" id="9"><label for="20min">20 min</label>
-            </div>
-            <div>
-              <input type="radio" name="min" id="10"><label for="30min">30 min</label>
-            </div>
-            <div>
-              <input type="radio" name="min" id="12"><label for="40min">40 min</label>
-            </div>
-            <div>
-              <input type="radio" name="min" id="13"><label for="50min">50 min</label>
-            </div>
-        </div>
-      </div>
-    </section>
-    <h2>All my recipes</h2>
     <div class="search-bar">
-      <input type="text" class="search-text" placeholder="search recipies">
-      <button type="submit" class="search-button button">
+      <input type="text" class="search-text" placeholder="Search recipies">
+      <button type="submit" class="search-button">
         <i class="fas fa-search" aria-hidden="true"></i>
       </button>
     </div>
-    <div class="loader-container loader-blog">
-      <div class="loader"></div>
+    <div class="search-parameter">
     </div>
-    <section class="blog-posts">
-    </section>
-    <button class="button">View more <i class="fas fa-chevron-right"></i></button>
+    <div class="search-result"></div>
   </main>
   <footer>
     <section class="footer-section">
@@ -111,8 +83,7 @@
     </section>
   </footer>
   <script src="js/lib/hamburgerMenu.js"></script>
-  <script src="js/lib/searchFunction.js"></script>
-  <script type="module" src="js/blogPost.js"></script>
+  <script type="module" src="js/lib/searchResult.js"></script>
 </body>
 
 </html> 
