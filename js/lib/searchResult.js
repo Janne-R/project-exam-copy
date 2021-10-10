@@ -1,3 +1,6 @@
+import getImageUrl from "../lib/getImageUrl.js";
+
+
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
@@ -5,7 +8,8 @@ const search = params.get("search");
 
 const url = `https://familykitchen.janne-ringdal.one/wp-json/wp/v2/posts?_embed&per_page=100&search=${search}`;
 
-async function viewSearchResults() {
+async function viewResults() {
+
   try {
 
     const getPosts = await fetch(url);
@@ -25,6 +29,9 @@ async function viewSearchResults() {
 
         searchContainer.innerHTML += `<a href="blog-specific.html?id=${resultPosts[i].id}">
                                                       <h2>${resultPosts[i].title.rendered}</h2>
+                                                      <div class="blog-post-image" style="background-image: url(${getImageUrl("medium", resultPosts[i].featured_media, resultPosts[i]._embedded["wp:featuredmedia"])})"></div>
+                                                      <p>${resultPosts[i].excerpt.rendered}</p>
+                                                     
                                                       `;
 
       }
@@ -36,4 +43,4 @@ async function viewSearchResults() {
   }
 }
 
-viewSearchResults();
+viewResults();
