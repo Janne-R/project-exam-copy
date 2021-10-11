@@ -1,6 +1,5 @@
 import getImageUrl from "../lib/getImageUrl.js";
 
-
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
@@ -31,15 +30,13 @@ async function viewResults() {
                                                       <h2>${resultPosts[i].title.rendered}</h2>
                                                       <div class="blog-post-image" style="background-image: url(${getImageUrl("medium", resultPosts[i].featured_media, resultPosts[i]._embedded["wp:featuredmedia"])})"></div>
                                                       <p>${resultPosts[i].excerpt.rendered}</p>
-                                                     
+                                                      <button class="button"> View recipe</button>
                                                       `;
-
       }
 
     }
   }
   catch (error) {
-    console.log("An error occurred " + error)
   }
 }
 
